@@ -15,4 +15,9 @@ These instructions will get you a copy of the project up and running on your loc
 
 ### Installing
 
-Download nt-gateway and nt-ms projects in to your STS or Eclipse workspace. 
+Download nt-gateway and nt-ms projects in to your STS or Eclipse workspace.
+https://medium.com/@niral22/2-way-ssl-with-spring-boot-microservices-2c97c974e83
+keytool -importkeystore -srckeystore nt-ms.jks -destkeystore nt-ms.p12 -srcstoretype JKS -deststoretype PKCS12 -srcstorepass nt-service -deststorepass nt-service -srcalias nt-ms -destalias nt-ms -srckeypass nt-service -destkeypass nt-service -noprompt
+
+
+keytool -importkeystore -srckeystore nt-gateway.jks -destkeystore nt-gateway.p12 -srcstoretype JKS -deststoretype PKCS12 -srcstorepass nt-gateway -deststorepass nt-gateway -srcalias nt-gateway -destalias nt-gateway -srckeypass nt-gateway -destkeypass nt-gateway -noprompt
